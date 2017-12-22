@@ -1,8 +1,6 @@
 # TODO
 ##### General method / technique implementations:
 - Cross validation
-- early stopping
-- saving the model and reloading
 - attention
 - ensembling
 - We need to set up a way (google docs spread cdsheet?) to keep the record on each of the architectures/ methods we tried
@@ -64,6 +62,9 @@ more RNN layers
 
     - 0.5 dropout layer after each layer in the architecture.
 
+- Overifitting prevention techniques used:
+
+    - Early stopping
 
 # Open Questions
 - Is dropout is dropped automatically in feed-forward in TF?
