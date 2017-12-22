@@ -1,8 +1,6 @@
 # TODO
 ##### General method / technique implementations:
-
 - Cross validation
-- PCA
 - early stopping
 - saving the model and reloading
 - attention
@@ -15,6 +13,7 @@
 - Tune hyperparameters : dropout rate, batch - size , learning rate
 - Architecture tunings: More neurons in dense layer, more dense layers, add a convolutional layer,
 more RNN layers
+- Play with data dimentionality: Try 50D - 300D glove + 300D and reduced with PCA to different values
 
 
 
@@ -29,6 +28,9 @@ more RNN layers
 - Two methods for getting word embeddings, all of which assign OOVs to the average embedding of non-used glove words and PADs to 0
     - Using glove to get a vocabulary and a  embeddings and then filter our dataset through this vocab
     - Using the training data to get the vocab, then filter the vocab through glove and randomly allocate words not in glove
+- After getting word embeddings , dimentionality has been varied using these different methods:
+    - Using the Glove embeddings with glove6B50D
+    - Using PCA to reduce the 300D glove embeddings to 50D
 - For sentence embeddings we used:
     - Single direction RNNS 1 layer
     - Single direction RNNS 2 layers
