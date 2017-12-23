@@ -33,7 +33,6 @@ more RNN layers
     - Single direction RNNS 1 layer
     - Single direction RNNS 2 layers
     - BI direction RNNS 1 layer
-    - BI direction RNNS 2 layers
 - After the sentence embedding, we used MLPs for training on the embeddings with the following architectures
 
     - Architecture 1 : 2 hidden layers of 512 and 256 neurons and an output layer of 25 neurons - classification
